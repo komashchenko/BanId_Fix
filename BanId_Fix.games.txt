@@ -7,21 +7,13 @@
 			"Filter_IsUserBanned"
 			{
 				"library"		"engine"
-				"windows"		"\x55\x8B\xEC\x83\xEC\x08\x57\x8B\xF9\x8B\x0D\x2A\x2A\x2A\x2A\x81\xF9"
+				"windows"		"\x55\x8B\xEC\x8B\x15\x2A\x2A\x2A\x2A\x83\xEC\x08\x53\x57"
 				"linux"			"\x55\x89\xE5\x57\x56\x53\x83\xEC\x2C\xA1\x2A\x2A\x2A\x2A\x3D"
 			}
-		}
-		"Offsets"
-		{
-			"ConnectClient"
+			"Filter_Steam64bitIdToUserID"
 			{
-				"windows"		"54"
-				"linux"			"55"
-			}
-			"RejectConnection"
-			{
-				"windows"		"52"
-				"linux"			"53"
+				"library"		"engine"
+				"windows"		"\x55\x8B\xEC\x8B\x4D\x08\x0F\x57\xC0"
 			}
 		}
 	}

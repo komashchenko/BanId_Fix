@@ -1,19 +1,22 @@
 # BanId Fix
 
-### Описание
-Данное расширение предназначено для исправления ошибки при бане через banid.
+### Description
+This plugin is designed to fix an error when banning through banid.
 <br>
-Когда забаненный игрок подключается к серверу, его кикает, но при этом сервер продолжает считать, что игрок просто подключается. Так появляются 'привидения', которые занимают слот.
-<h1 align="center"><img src="https://zizt.ru/uploads/monthly_2018_08/unknown.png.6b368c75a2a745bcd69b3ba3a8b762cb.png"/></h1>
+When a banned player connects to the server, he is kicked, but the server continues to think that the player is just connecting. So there are 'ghosts' that occupy the slot.
+<h1 align="center"><img src="https://zizt.fun/uploads/monthly_2018_08/unknown.png.6b368c75a2a745bcd69b3ba3a8b762cb.png"/></h1>
 
-### Установка
-1. Скачать [архив](https://github.com/komashchenko/BanId_Fix/releases) с последней версией
-2. Распаковать архив
-3. Закинуть на сервер
-4. Перезапустить сервер
-5. Ввести команду `sm exts list` и убедиться, что расширение нормально работает
+### Dependencies
+- [PTaH](https://github.com/komashchenko/PTaH)
 
-### Квары
-Расширение добавляет квар `sv_banned_from_server_message`, который позволяет изменить сообщение, отображаемое кикнутому игроку.
+### Installation
+1. Download [plugin](https://github.com/komashchenko/BanId_Fix/blob/master/BanId_Fix.sp)
+2. Compile
+3. Upload to server
+4. Restart server
+5. Enter the command `sm plugins list` in the console and make sure that the plugin is working
+
+### ConVars
+The plugin adds the `sv_banned_from_server_message` cvar which allows you to change the message displayed to the kicked player.
 <br>
-Значение по умолчанию `#Valve_Reject_Banned_From_Server`
+The default value is `#Valve_Reject_Banned_From_Server`
